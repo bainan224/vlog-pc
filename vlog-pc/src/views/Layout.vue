@@ -17,7 +17,7 @@
       <v-toolbar-title>南方的个人博客</v-toolbar-title>
 
       <v-btn value="recent" class="primary" @click="$router.push('/news')">
-        <span>动态</span>
+        <span>首页</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>
 
@@ -32,6 +32,9 @@
       </v-btn>
 
       <v-spacer></v-spacer>
+      <v-avatar>
+        <v-img :src="user.avatar"></v-img>
+      </v-avatar>
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -68,9 +71,16 @@
   </v-card>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   data: () => ({
     show: true
-  })
+  }),
+  computed: {
+    ...mapState({
+      loginStatus: (state) => state.loginStatus,
+      user: (state) => state.user
+    })
+  }
 }
 </script>
