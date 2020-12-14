@@ -9,11 +9,11 @@
         label="性别"
         requierd
         ></v-select>
-        <v-row justify="start">
+        <v-row justify="center">
           <v-date-picker v-model="birthdayPicker" elevation="5"></v-date-picker>
         </v-row>
 
-        <v-row justify="start" class="my-6">
+        <v-row justify="center" class="my-6">
           <v-distpicker
             :province="addressSelect.province"
             :city="addressSelect.city"
