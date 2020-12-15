@@ -75,6 +75,11 @@ const routes = [
             component: () => import('../views/About.vue')
           }
         ]
+      },
+      {
+        path: '/404',
+        name: 'Page404',
+        component: () => import('../views/Page404.vue')
       }
     ]
   },
@@ -82,11 +87,6 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import('../views/Login.vue')
-  },
-  {
-    path: '/404',
-    name: 'Page404',
-    component: () => import('../views/Page404.vue')
   }
 ]
 

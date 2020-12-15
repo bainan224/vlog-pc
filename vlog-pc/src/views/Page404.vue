@@ -1,7 +1,10 @@
 <template>
-  <v-container>
-    <h3>404</h3>
-  </v-container>
+  <v-row>
+    <v-card style="height:600px;width:100%;">
+      <v-card-title style="justify-content:center">哦豁~~404了~~~~~~</v-card-title>
+      <img src="http://bnnbucket.oss-cn-hangzhou.aliyuncs.com/wallpaper/b4.jpg" class="img"/>
+    </v-card>
+  </v-row>
 </template>
 
 <script>
@@ -14,3 +17,10 @@ export default {
   methods: {}
 }
 </script>
+
+<style lang="scss" scoped>
+.img{
+width: 100%;
+height: 600px;
+}
+</style>
