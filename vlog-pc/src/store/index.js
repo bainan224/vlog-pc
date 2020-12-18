@@ -6,7 +6,21 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     loginStatus: false,
-    user: {}
+    avatar: '',
+    gender:'',
+    user: {
+      id: 1,
+      phone: '19827063716',
+      password:'78b50cdecafdf97014e854662da05d7c',
+      nickname: '孟听',
+      avatar: 'http://bnnbucket.oss-cn-hangzhou.aliyuncs.com/avatar/tou.jpg',
+      gender: '0',
+      birthday: '2001-9-16',
+      address: '江苏省盐城市盐都区',
+      banner: 'http://bnnbucket.oss-cn-hangzhou.aliyuncs.com/avatar/bg.jpg',
+      signature:'彼岸花开 | 开到茶靡',
+      createTime: '2020-12-08 17:25:14'
+    }
   },
   getters: {},
   mutations: {
